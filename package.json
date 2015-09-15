@@ -1,0 +1,24 @@
+{
+  "name": "fluxlike",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danjamin/fluxlike.git"
+  },
+  "description": "A framework for isomorphic react applications",
+  "main": "fluxlike.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "flux",
+    "isomorphic",
+    "isomorphism",
+    "javascript",
+    "seo",
+    "robust"
+  ],
+  "author": "danjamin <e051ba3be@gmail.com>",
+  "license": "MIT"
+}
