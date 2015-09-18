@@ -1,19 +1,19 @@
 /* global __dirname */
 
-import React from 'react';
-import express from 'express';
-import fs from 'fs';
-import _ from 'underscore';
+var React = require('react');
+var express = require('express');
+var fs = require('fs');
+var _ = require('underscore');
 
-import Router from './lib/Router.js';
-import bootstrap from './lib/bootstrap.js';
-import ActionCreators from './lib/ActionCreators.js';
-import RootView from './lib/RootView.js';
+var Router = require('./lib/Router.js');
+var bootstrap = require('./lib/bootstrap.js');
+var ActionCreators = require('./lib/ActionCreators.js');
+var RootView = require('./lib/RootView.js');
 
 var BUILD_DIR = '_build';
 var BUILD_JS_DIR = '_build_js';
 
-export default function serve(routes, configFn, options) {
+module.exports = function serve(routes, configFn, options) {
   var app = express();
 
   options = _.extendOwn({

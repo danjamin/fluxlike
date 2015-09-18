@@ -1,16 +1,16 @@
-import ActionCreators from './lib/ActionCreators.js';
-import ActionTypes from './lib/ActionTypes.js';
-import API from './lib/API.js';
-import bootstrap from './lib/bootstrap.js';
-import Dispatcher from './lib/Dispatcher.js';
-import LinkTo from './lib/LinkTo.js';
-import RootView from './lib/RootView.js';
-import Router from './lib/Router.js';
-import RouteStore from './lib/RouteStore.js';
-import Serializer from './lib/Serializer.js';
-import Store from './lib/Store.js';
+var ActionCreators = require('./lib/ActionCreators.js');
+var ActionTypes = require('./lib/ActionTypes.js');
+var API = require('./lib/API.js');
+var bootstrap = require('./lib/bootstrap.js');
+var Dispatcher = require('./lib/Dispatcher.js');
+var LinkTo = require('./lib/LinkTo.js');
+var RootView = require('./lib/RootView.js');
+var Router = require('./lib/Router.js');
+var RouteStore = require('./lib/RouteStore.js');
+var Serializer = require('./lib/Serializer.js');
+var Store = require('./lib/Store.js');
 
-export {
+module.exports = {
   ActionCreators,
   ActionTypes,
   API,
