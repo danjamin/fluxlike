@@ -1,4 +1,4 @@
-/* global process, __dirname */
+/* global __dirname */
 
 import React from 'react';
 import express from 'express';
@@ -23,7 +23,9 @@ export default function serve(routes, configFn, options) {
 
   // Set the port
   app.listen(options.port, function () {
-    options.debug && console.log('Node app is running at localhost:' + options.port);
+    if (options.debug) {
+      console.log('Node app is running at localhost:' + options.port);
+    }
   });
 
   // Setup /public access
@@ -38,12 +40,15 @@ export default function serve(routes, configFn, options) {
   app.get('*', function (req, res) {
     var url = req.path.substr(1);
 
-    options.debug && console.log('serving url', url ? url : '/');
+    if (options.debug) {
+      console.log('serving url', url ? url : '/');
+    }
 
     res.setHeader("Cache-Control", "no-cache");
 
     fs.readFile(__dirname + '/200.html', 'utf8', function(err, data) {
-      var content = '',
+      var title = '',
+        content = '',
         serializedData = '""';
 
       if (err) {
@@ -72,6 +77,7 @@ export default function serve(routes, configFn, options) {
       }
 
       function _send () {
+        data = data.replace('{{title}}', title);
         data = data.replace('{{content}}', content);
         data = data.replace('{{data}}', serializedData);
         res.send(data);

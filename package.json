@@ -8,7 +8,8 @@
   "description": "A framework for isomorphic react applications",
   "main": "fluxlike.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "./scripts/lint",
+    "test": "./scripts/test"
   },
   "keywords": [
     "react",
