@@ -5,7 +5,7 @@ import express from 'express';
 import fs from 'fs';
 import _ from 'underscore';
 
-import {Router} from './lib/Router.js';
+import Router from './lib/Router.js';
 import bootstrap from './lib/bootstrap.js';
 import ActionCreators from './lib/ActionCreators.js';
 import RootView from './lib/RootView.js';
