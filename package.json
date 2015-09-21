@@ -22,6 +22,10 @@
   ],
   "author": "danjamin <e051ba3be@gmail.com>",
   "license": "MIT",
+  "peerDependencies": {
+    "flux": ">=2.1.0",
+    "react": ">=0.13.0"
+  },
   "dependencies": {
     "broccoli-autoprefixer": "^4.0.0",
     "broccoli-funnel": "^0.2.8",
@@ -32,8 +36,6 @@
     "fl-router": "git://github.com/danjamin/fl-router.git#isomorphism",
     "fl-serializer": "git://github.com/danjamin/fl-serializer.git#master",
     "fl-store": "git://github.com/danjamin/fl-store.git#isomorphism",
-    "flux": "^2.1.1",
-    "react": "^0.13.3",
     "underscore": "^1.8.3"
   }
 }
