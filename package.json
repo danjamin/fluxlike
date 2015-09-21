@@ -28,6 +28,10 @@
     "broccoli-merge-trees": "^0.2.3",
     "broccoli-sass": "^0.6.6",
     "express": "^4.13.3",
+    "fl-api-service": "git://github.com/danjamin/fl-api-service.git#isomorphism",
+    "fl-router": "git://github.com/danjamin/fl-router.git#isomorphism",
+    "fl-serializer": "git://github.com/danjamin/fl-serializer.git#master",
+    "fl-store": "git://github.com/danjamin/fl-store.git#isomorphism",
     "flux": "^2.1.1",
     "react": "^0.13.3",
     "underscore": "^1.8.3"
