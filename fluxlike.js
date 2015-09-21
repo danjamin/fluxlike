@@ -11,15 +11,15 @@ var Serializer = require('./lib/Serializer.js');
 var Store = require('./lib/Store.js');
 
 module.exports = {
-  ActionCreators,
-  ActionTypes,
-  API,
-  bootstrap,
-  Dispatcher,
-  LinkTo,
-  RootView,
-  Router,
-  RouteStore,
-  Serializer,
-  Store
+  ActionCreators: ActionCreators,
+  ActionTypes: ActionTypes,
+  API: API,
+  bootstrap: bootstrap,
+  Dispatcher: Dispatcher,
+  LinkTo: LinkTo,
+  RootView: RootView,
+  Router: Router,
+  RouteStore: RouteStore,
+  Serializer: Serializer,
+  Store: Store
 };
