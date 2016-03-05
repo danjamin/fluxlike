@@ -8,7 +8,8 @@
   "description": "A framework for isomorphic react applications",
   "main": "fluxlike.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "./scripts/lint",
+    "test": "./scripts/test"
   },
   "keywords": [
     "react",
@@ -20,5 +21,21 @@
     "robust"
   ],
   "author": "danjamin <e051ba3be@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {
+    "flux": ">=2.1.0",
+    "react": ">=0.13.0"
+  },
+  "dependencies": {
+    "broccoli-autoprefixer": "^4.0.0",
+    "broccoli-funnel": "^0.2.8",
+    "broccoli-merge-trees": "^0.2.3",
+    "broccoli-sass": "^0.6.6",
+    "express": "^4.13.3",
+    "fl-api-service": "git://github.com/danjamin/fl-api-service.git#isomorphism",
+    "fl-router": "git://github.com/danjamin/fl-router.git#isomorphism",
+    "fl-serializer": "git://github.com/danjamin/fl-serializer.git#master",
+    "fl-store": "git://github.com/danjamin/fl-store.git#isomorphism",
+    "underscore": "^1.8.3"
+  }
 }
